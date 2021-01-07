@@ -1,0 +1,96 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "powerpointHelper/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNet.WebHooks.Receivers": "1.2.2"
+        },
+        "runtime": {
+          "powerpointHelper.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.2": {
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.20826.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.2": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.2"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.20826.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebHooks.Common/1.2.2": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.2"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.WebHooks.Common.dll": {
+            "assemblyVersion": "1.2.2.0",
+            "fileVersion": "1.2.51204.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebHooks.Receivers/1.2.2": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.2",
+          "Microsoft.AspNet.WebHooks.Common": "1.2.2"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.WebHooks.Receivers.dll": {
+            "assemblyVersion": "1.2.2.0",
+            "fileVersion": "1.2.51204.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "powerpointHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YVq+s0WeXrPxJk57CoElbtMYf95j76uJcW6nue3Cs4eIer9sgUp4rasSo0gALX3ls1Zf2jMceOLik9X/sJyrwA==",
+      "path": "microsoft.aspnet.webapi.client/5.2.2",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.2.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P5boFqqGDq1XF7PVz1U4ju85wQLT0Pb5BbuiWy72cOmWXJKCCNqL+av6omi30knp62hpmfw+3rSCm+Nmt5zRgQ==",
+      "path": "microsoft.aspnet.webapi.core/5.2.2",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.2.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebHooks.Common/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WkzgJPYjVPXEhu2vQIZ5GkNX3pSLHMf1Er8tFY69gqikVu8f0+X0ntserOlDSMQ0FbqQZ02EFXXpPt0BomZyZg==",
+      "path": "microsoft.aspnet.webhooks.common/1.2.2",
+      "hashPath": "microsoft.aspnet.webhooks.common.1.2.2.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebHooks.Receivers/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VNWY54+y27B3Nv1BF7zw7+TTTfTlQrKybJ+KbN2gbyF8CB5Z4NGLym1GrX2v+bsEjR5glwBms63sBqVzSUlCIg==",
+      "path": "microsoft.aspnet.webhooks.receivers/1.2.2",
+      "hashPath": "microsoft.aspnet.webhooks.receivers.1.2.2.nupkg.sha512"
+    }
+  }
+}

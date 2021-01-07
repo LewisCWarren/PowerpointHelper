@@ -1,0 +1,53 @@
+﻿<Window x:Class="powerpointHelper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:powerpointHelper"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800" Background="#FF898989">
+    <Grid Margin="0,19,0,3">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Title:" Margin="48,8,5,2" FontSize="30" RenderTransformOrigin="0.275,0.538"/>
+        <TextBox Name="userTitle" Margin="192,8,191,150" RenderTransformOrigin="0.568,1.563" Text="{Binding value}">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.069"/>
+                    <TranslateTransform X="0.057" Y="-0.03"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+        <Label Content="Body Text:" Margin="48,78,48,136" FontSize="20" Grid.RowSpan="2"/>
+        <TextBox Name="userText" Margin="192,87,25,152" RenderTransformOrigin="0.568,1.563" Grid.RowSpan="2" Text="{Binding body}">
+            
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.069"/>
+                    <TranslateTransform X="0.057" Y="-0.03"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+        <TextBlock Margin="63,68,-23,176" Text="text goes here" Name="textBlock" RenderTransformOrigin="0.488,0.469" Grid.RowSpan="2" Grid.Row="1"></TextBlock>
+
+        <Button Name="searchImages" Margin="338,85,338,85" Grid.Row="1" RenderTransformOrigin="0.494,0.677" Click="Search">Search Images</Button>
+
+        <Label Content="Images:" RenderTransformOrigin="0.499,0.512" Margin="48,133,-10,71" Grid.Row="1" FontSize="30" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="1134" Margin="63,23,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="177"/>
+
+        <RichTextBox Name="richText" Margin="30,204,10,40" Grid.RowSpan="2" Grid.Row="1">
+            
+        </RichTextBox>
+    </Grid>
+
+</Window>
